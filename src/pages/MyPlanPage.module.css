@@ -1,0 +1,124 @@
+.page {
+  padding: 24px;
+  position: relative;
+  min-height: 400px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 16px;
+}
+
+.card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  padding: 48px 40px;
+  max-width: 520px;
+  width: 100%;
+  text-align: center;
+  background: var(--bg);
+  box-shadow: var(--shadow);
+}
+
+.lockIcon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--pink-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+}
+
+.label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--pink);
+  margin-bottom: 10px;
+}
+
+.heading {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 14px;
+  line-height: 1.3;
+}
+
+.desc {
+  font-size: 13.5px;
+  color: var(--text-3);
+  line-height: 1.65;
+  margin-bottom: 24px;
+}
+
+.upgradeBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--pink);
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 13px 28px;
+  border-radius: 30px;
+  transition: background 0.15s;
+}
+.upgradeBtn:hover { background: var(--pink-hover); }
+
+/* Social proof popup */
+.popup {
+  position: fixed;
+  bottom: 80px;
+  left: 240px;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 12px 14px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  box-shadow: var(--shadow-md);
+  max-width: 280px;
+  z-index: 50;
+}
+
+.popupFlag {
+  font-size: 22px;
+  flex-shrink: 0;
+  background: var(--bg-3);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popupText { flex: 1; }
+
+.popupMsg {
+  font-size: 12.5px;
+  color: var(--text);
+  line-height: 1.4;
+  margin-bottom: 4px;
+}
+
+.popupMeta {
+  font-size: 11px;
+  color: var(--text-4);
+}
+
+.popupBrand { color: var(--pink); }
+
+.popupClose {
+  font-size: 11px;
+  color: var(--text-4);
+  flex-shrink: 0;
+  padding: 2px;
+}
+.popupClose:hover { color: var(--text); }

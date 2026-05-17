@@ -1,0 +1,127 @@
+.topbar {
+  height: var(--topbar-height);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px 0 16px;
+  background: var(--bg);
+  flex-shrink: 0;
+  gap: 16px;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex: 1;
+}
+
+.logo {
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 1;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.logoRemote {
+  color: var(--text-3);
+  font-weight: 400;
+  font-size: 12px;
+  display: block;
+  line-height: 1;
+}
+
+.logoWork {
+  color: var(--text);
+}
+
+.logoHer {
+  color: var(--pink);
+}
+
+.searchWrap {
+  position: relative;
+  flex: 1;
+  max-width: 420px;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-4);
+}
+
+.searchInput {
+  width: 100%;
+  padding: 8px 12px 8px 34px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  background: var(--bg-2);
+  color: var(--text);
+  outline: none;
+  font-size: 13px;
+  transition: border-color 0.15s;
+}
+
+.searchInput::placeholder { color: var(--text-4); }
+.searchInput:focus { border-color: var(--pink); background: var(--bg); }
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.tabs {
+  display: flex;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 14px;
+  font-size: 12.5px;
+  font-weight: 500;
+  color: var(--text-3);
+  transition: background 0.15s, color 0.15s;
+}
+
+.tab:hover { background: var(--bg-2); }
+
+.tabActive {
+  background: var(--pink-light);
+  color: var(--pink);
+}
+
+.loginBtn {
+  padding: 7px 18px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+  transition: background 0.15s;
+}
+
+.loginBtn:hover { background: var(--bg-2); }
+
+.hiringBtn {
+  padding: 7px 18px;
+  background: var(--pink);
+  color: white;
+  border-radius: var(--radius-xl);
+  font-size: 13px;
+  font-weight: 600;
+  transition: background 0.15s;
+}
+
+.hiringBtn:hover { background: var(--pink-hover); }

@@ -1,0 +1,118 @@
+.page { padding: 24px; }
+
+.eyebrow {
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--text-4);
+  margin-bottom: 6px;
+}
+
+.heading {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+.pink { color: var(--pink); font-style: italic; }
+
+.sub {
+  font-size: 13.5px;
+  color: var(--text-3);
+  line-height: 1.6;
+  max-width: 560px;
+  margin-bottom: 20px;
+}
+
+.cats {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.catBtn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 7px 16px;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-2);
+  background: var(--bg);
+  transition: all 0.15s;
+}
+.catBtn:hover { background: var(--bg-2); }
+
+.catActive {
+  background: var(--pink);
+  border-color: var(--pink);
+  color: white;
+}
+.catActive:hover { background: var(--pink-hover); }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  background: var(--bg);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  transition: box-shadow 0.15s, border-color 0.15s;
+}
+.card:hover {
+  border-color: var(--pink-light);
+  box-shadow: var(--shadow-md);
+}
+
+.cardTop { margin-bottom: 4px; }
+.icon { font-size: 26px; }
+
+.toolLabel {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.toolDesc {
+  font-size: 12.5px;
+  color: var(--text-3);
+  line-height: 1.5;
+  flex: 1;
+}
+
+.cardBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+
+.cost {
+  font-size: 12px;
+  color: var(--text-3);
+  font-weight: 500;
+}
+
+.useBtn {
+  background: var(--pink);
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 7px 14px;
+  border-radius: 20px;
+  transition: background 0.15s;
+}
+.useBtn:hover { background: var(--pink-hover); }

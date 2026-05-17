@@ -1,0 +1,70 @@
+.footer {
+  border-top: 1px solid var(--border);
+  padding: 40px 32px 20px;
+  background: var(--bg);
+  margin-top: 48px;
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 32px;
+  margin-bottom: 28px;
+}
+
+.brand {}
+
+.logo {
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 10px;
+}
+
+.logoSmall {
+  display: block;
+  font-size: 10px;
+  font-weight: 400;
+  color: var(--text-4);
+}
+
+.logoBlack { color: var(--text); }
+.logoPink { color: var(--pink); }
+
+.tagline {
+  font-size: 12px;
+  color: var(--text-3);
+  line-height: 1.6;
+  max-width: 220px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.colHead {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--text-4);
+  margin-bottom: 4px;
+}
+
+.link {
+  font-size: 13px;
+  color: var(--text-3);
+  transition: color 0.15s;
+}
+
+.link:hover { color: var(--text); }
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+  font-size: 12px;
+  color: var(--text-4);
+}
